@@ -19,6 +19,10 @@ import { Especialidad } from './especialidad/especialidad.entity';
       entities:[Especialidad]
     }) ,EspecialidadModule],
 
+import { DoctorModule } from './doctor/doctor.module';
+
+@Module({
+  imports: [DoctorModule],
   controllers: [AppController],
   providers: [AppService],
 })
